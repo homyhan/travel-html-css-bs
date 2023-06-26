@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- FA  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- BS 5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+
+    <!-- STYLE  -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <section class="intro py-3">
+      <div class="container content">
+        <div class="row">
+          <div class="col-lg-6 col-md-6">
+            <a href=""
+              ><img
+                class="rounded-circle"
+                src="https://static.vecteezy.com/system/resources/previews/000/511/437/original/travel-tourism-logo-isolated-on-white-background-vector.jpg"
+                alt=""
+            /></a>
+          </div>
+          <div
+            class="col-lg-6 col-md-6 d-flex align-items-center justify-content-lg-around"
+          >
+            <div class="item iconIntro">
+              <a class="text-white" title="phone" href="tel: 020908009008"
+                ><i
+                  class="fa fa-phone me-2 border border-white rounded-circle p-2"
+                ></i>
+                020908009008</a
+              >
+            </div>
+            <div class="item iconIntro">
+              <a
+                class="text-white"
+                title="email"
+                href="mail: travel@vietnamtravel.com"
+                ><i
+                  class="fa fa-envelope me-2 border border-white rounded-circle p-2"
+                ></i>
+                travel@vietnamtravel.com</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <nav class="navbar navbar-expand-lg bg-body-white py-0">
+      <div class="container-fluid content">        
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+            <li class="nav-item p-2">
+              <a class="nav-link" aria-current="page" href="./index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item p-2 active">
+              <a class="nav-link " href="./vietnamtour.html"
+                >VietNam Tour</a
+              >
+            </li>
+            <li class="nav-item dropdown p-2">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Hotel
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item text-dark" href="#">Action</a></li>
+                <li><a class="dropdown-item text-dark" href="#">Another action</a></li>                
+                <li>
+                  <a class="dropdown-item text-dark" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown p-2">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Promotion
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item text-dark" href="#">Action</a></li>
+                <li><a class="dropdown-item text-dark" href="#">Another action</a></li>                
+                <li>
+                  <a class="dropdown-item text-dark" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li
+              class="nav-item p-2"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#modalSignin"
+            >
+              <a class="nav-link">Signin</a>
+            </li>
+            <li
+              class="nav-item p-2"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#modalSignup"
+            >
+              <a class="nav-link">Signup</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <header class="header">
+      <div class="content">
+        <div
+          id="carouselExampleInterval"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="2000">
+              <img
+                src="https://i.ytimg.com/vi/4yhJmPZjufQ/maxresdefault.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img
+                src="https://expl-media.azureedge.net/mediacontainer/medialibraries/explore/explore-media/destinations/asia/vietnam/vietnam-thumbnail.jpg?ext=.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img
+                src="https://images.tripadeal.com.au/cdn-cgi/image/format=auto,width=800/https://cstad.s3.ap-southeast-2.amazonaws.com/4555_Highlights_Of_Vietnam__WEB_HERO_1+halong+bay.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- TABS  -->
+    <section class="tabs">
+      <div class="container content">
+        <nav>
+          <div class="nav nav-tabs" id="nav-tab" role="tablist">
+            <button
+              class="nav-link active"
+              id="nav-home-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#nav-home"
+              type="button"
+              role="tab"
+              aria-controls="nav-home"
+              aria-selected="true"
+            >
+              Ha Long
+            </button>
+            <button
+              class="nav-link"
+              id="nav-profile-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#nav-profile"
+              type="button"
+              role="tab"
+              aria-controls="nav-profile"
+              aria-selected="false"
+            >
+              Nha Trang - Da Lat
+            </button>
+            <button
+              class="nav-link"
+              id="nav-contact-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#nav-contact"
+              type="button"
+              role="tab"
+              aria-controls="nav-contact"
+              aria-selected="false"
+            >
+              Vung Tau
+            </button>
+            <button
+              class="nav-link"
+              id="nav-disabled-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#nav-disabled"
+              type="button"
+              role="tab"
+              aria-controls="nav-disabled"
+              aria-selected="false"
+              
+            >
+              Ho Chi Minh
+            </button>
+          </div>
+        </nav>
+        <div class="tab-content" id="nav-tabContent">
+          <div
+            class="tab-pane fade show active border border-dark border-top-0 p-3"
+            id="nav-home"
+            role="tabpanel"
+            aria-labelledby="nav-home-tab"
+            tabindex="0"
+          >
+            <div class="row mb-3">
+                <div class="col-lg-4">
+                    <div class="card ">
+                        <div class="imgTour">
+                          <img class="card-img-top " src="images/halong1.jpg" alt="">
+                          <div class="time">
+                            <i class="fa fa-clock"></i>3 days/2 nights
+                          </div>
+                        </div>                                            
+                        <div class="card-body cardTourItem">                                       
+                          <a class="card-title nameHotTour" href="">ĐẢO NGỌC CÁT BÀ - VỊNH LAN HẠ - HANG SÁNG TỐI 3N2D</a>
+                          <p class="card-text mt-2">
+                            <i class="fas fa-walking"></i> Plane & car <br>
+                            <i class="fas fa-calendar-alt"></i> 2021 <br>
+                            <i class="fas fa-dollar-sign"></i> 3, 700, 000 đ
+                            <div class="footerCard d-flex justify-content-between">
+                              <button class="btn btn-outline-primary ml-1 float-right">Detail</button>
+                              <button class="btn btn-primary ml-1 float-right">Book</button>                    
+                            </div>
+                            
+                          </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card ">
+                        <div class="imgTour">
+                          <img class="card-img-top " src="images/halong2.jpg" alt="">
+                          <div class="time">
+                            <i class="fa fa-clock"></i>3 days/2 nights
+                          </div>
+                        </div>                                            
+                        <div class="card-body cardTourItem">                                       
+                          <a class="card-title nameHotTour" href="">ĐẢO NGỌC CÁT BÀ - VỊNH LAN HẠ - HANG SÁNG TỐI 3N2D</a>
+                          <p class="card-text mt-2">
+                            <i class="fas fa-walking"></i> Plane & car <br>
+                            <i class="fas fa-calendar-alt"></i> 2021 <br>
+                            <i class="fas fa-dollar-sign"></i> 3, 700, 000 đ
+                            <div class="footerCard d-flex justify-content-between">
+                              <button class="btn btn-outline-primary ml-1 float-right">Detail</button>
+                              <button class="btn btn-primary ml-1 float-right">Book</button>                    
+                            </div>
+                            
+                          </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card ">
+                        <div class="imgTour">
+                          <img class="card-img-top " src="images/halong3.jpg" alt="">
+                          <div class="time">
+                            <i class="fa fa-clock"></i>3 days/2 nights
+                          </div>
+                        </div>                                            
+                        <div class="card-body cardTourItem">                                       
+                          <a class="card-title nameHotTour" href="">ĐẢO NGỌC CÁT BÀ - VỊNH LAN HẠ - HANG SÁNG TỐI 3N2D</a>
+                          <p class="card-text mt-2">
+                            <i class="fas fa-walking"></i> Plane & car <br>
+                            <i class="fas fa-calendar-alt"></i> 2021 <br>
+                            <i class="fas fa-dollar-sign"></i> 3, 700, 000 đ
+                            <div class="footerCard d-flex justify-content-between">
+                              <button class="btn btn-outline-primary ml-1 float-right">Detail</button>
+                              <button class="btn btn-primary ml-1 float-right">Book</button>                    
+                            </div>
+                            
+                          </p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="card ">
+                        <div class="imgTour">
+                          <img class="card-img-top " src="images/halong4.jpg" alt="">
+                          <div class="time">
+                            <i class="fa fa-clock"></i>3 days/2 nights
+                          </div>
+                        </div>                                            
+                        <div class="card-body cardTourItem">                                       
+                          <a class="card-title nameHotTour" href="">ĐẢO NGỌC CÁT BÀ - VỊNH LAN HẠ - HANG SÁNG TỐI 3N2D</a>
+                          <p class="card-text mt-2">
+                            <i class="fas fa-walking"></i> Plane & car <br>
+                            <i class="fas fa-calendar-alt"></i> 2021 <br>
+                            <i class="fas fa-dollar-sign"></i> 3, 700, 000 đ
+                            <div class="footerCard d-flex justify-content-between">
+                              <button class="btn btn-outline-primary ml-1 float-right">Detail</button>
+                              <button class="btn btn-primary ml-1 float-right">Book</button>                    
+                            </div>
+                            
+                          </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card ">
+                        <div class="imgTour">
+                          <img class="card-img-top " src="images/halong5.jpg" alt="">
+                          <div class="time">
+                            <i class="fa fa-clock"></i>3 days/2 nights
+                          </div>
+                        </div>                                            
+                        <div class="card-body cardTourItem">                                       
+                          <a class="card-title nameHotTour" href="">ĐẢO NGỌC CÁT BÀ - VỊNH LAN HẠ - HANG SÁNG TỐI 3N2D</a>
+                          <p class="card-text mt-2">
+                            <i class="fas fa-walking"></i> Plane & car <br>
+                            <i class="fas fa-calendar-alt"></i> 2021 <br>
+                            <i class="fas fa-dollar-sign"></i> 3, 700, 000 đ
+                            <div class="footerCard d-flex justify-content-between">
+                              <button class="btn btn-outline-primary ml-1 float-right">Detail</button>
+                              <button class="btn btn-primary ml-1 float-right">Book</button>                    
+                            </div>
+                            
+                          </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card ">
+                        <div class="imgTour">
+                          <img class="card-img-top " src="images/halong6.jpg" alt="">
+                          <div class="time">
+                            <i class="fa fa-clock"></i>3 days/2 nights
+                          </div>
+                        </div>                                            
+                        <div class="card-body cardTourItem">                                       
+                          <a class="card-title nameHotTour" href="">ĐẢO NGỌC CÁT BÀ - VỊNH LAN HẠ - HANG SÁNG TỐI 3N2D</a>
+                          <p class="card-text mt-2">
+                            <i class="fas fa-walking"></i> Plane & car <br>
+                            <i class="fas fa-calendar-alt"></i> 2021 <br>
+                            <i class="fas fa-dollar-sign"></i> 3, 700, 000 đ
+                            <div class="footerCard d-flex justify-content-between">
+                              <button class="btn btn-outline-primary ml-1 float-right">Detail</button>
+                              <button class="btn btn-primary ml-1 float-right">Book</button>                    
+                            </div>
+                            
+                          </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade border border-dark border-top-0 p-3"
+            id="nav-profile"
+            role="tabpanel"
+            aria-labelledby="nav-profile-tab"
+            tabindex="0"
+          >
+            <div class="row mb-3">
+                <div class="col-lg-4">
+                    <div class="card ">
+                        <div class="imgTour">
+                          <img class="card-img-top " src="images/nt-dl1.jpg" alt="">
+                          <div class="time">
+                            <i class="fa fa-clock"></i>3 days/2 nights
+                          </div>
+                        </div>                                            
+                        <div class="card-body cardTourItem">                                       
+                          <a class="card-title nameHotTour" href="">TP.HCM - Đà Lạt - Xứ Sở Ngàn Hoa 3 Ngày Đặc Sắc, Đi Xe Bus Hàng Ngày 2023</a>
+                          <p class="card-text mt-2">
+                            <i class="fas fa-walking"></i> Plane & car <br>
+                            <i class="fas fa-calendar-alt"></i> 2021 <br>
+                            <i class="fas fa-dollar-sign"></i> 3, 700, 000 đ
+                            <div class="footerCard d-flex justify-content-between">
+                              <button class="btn btn-outline-primary ml-1 float-right">Detail</button>
+                              <button class="btn btn-primary ml-1 float-right">Book</button>                    
+                            </div>
+                            
+                          </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card ">
+                        <div class="imgTour">
+                          <img class="card-img-top " src="images/nt-dl2.jpg" alt="">
+                          <div class="time">
+                            <i class="fa fa-clock"></i>3 days/2 nights
+                          </div>
+                        </div>                                            
+                        <div class="card-body cardTourItem">                                       
+                          <a class="card-title nameHotTour" href="">TP.HCM - Đà Lạt - Xứ Sở Ngàn Hoa 3 Ngày Đặc Sắc, Đi Xe Bus Hàng Ngày 2023</a>
+                          <p class="card-text mt-2">
+                            <i class="fas fa-walking"></i> Plane & car <br>
+                            <i class="fas fa-calendar-alt"></i> 2021 <br>
+                            <i class="fas fa-dollar-sign"></i> 3, 700, 000 đ
+                            <div class="footerCard d-flex justify-content-between">
+                              <button class="btn btn-outline-primary ml-1 float-right">Detail</button>
+                              <button class="btn btn-primary ml-1 float-right">Book</button>                    
+                            </div>
+                            
+                          </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card ">
+                        <div class="imgTour">
+                          <img class="card-img-top " src="images/nt-dl3.jpg" alt="">
+                          <div class="time">
+                            <i class="fa fa-clock"></i>3 days/2 nights
+                          </div>
+                        </div>                                            
+                        <div class="card-body cardTourItem">                                       
+                          <a class="card-title nameHotTour" href="">TP.HCM - Đà Lạt - Xứ Sở Ngàn Hoa 3 Ngày Đặc Sắc, Đi Xe Bus Hàng Ngày 2023</a>
+                          <p class="card-text mt-2">
+                            <i class="fas fa-walking"></i> Plane & car <br>
+                            <i class="fas fa-calendar-alt"></i> 2021 <br>
+                            <i class="fas fa-dollar-sign"></i> 3, 700, 000 đ
+                            <div class="footerCard d-flex justify-content-between">
+                              <button class="btn btn-outline-primary ml-1 float-right">Detail</button>
+                              <button class="btn btn-primary ml-1 float-right">Book</button>                    
+                            </div>
+                            
+                          </p>
+                        </div>
+                    </div>
+                </div>                
+                
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="card ">
+                        <div class="imgTour">
+                          <img class="card-img-top " src="images/nt-dl4.jpg" alt="">
+                          <div class="time">
+                            <i class="fa fa-clock"></i>3 days/2 nights
+                          </div>
+                        </div>                                            
+                        <div class="card-body cardTourItem">                                       
+                          <a class="card-title nameHotTour" href="">TP.HCM - Đà Lạt - Xứ Sở Ngàn Hoa 3 Ngày Đặc Sắc, Đi Xe Bus Hàng Ngày 2023</a>
+                          <p class="card-text mt-2">
+                            <i class="fas fa-walking"></i> Plane & car <br>
+                            <i class="fas fa-calendar-alt"></i> 2021 <br>
+                            <i class="fas fa-dollar-sign"></i> 3, 700, 000 đ
+                            <div class="footerCard d-flex justify-content-between">
+                              <button class="btn btn-outline-primary ml-1 float-right">Detail</button>
+                              <button class="btn btn-primary ml-1 float-right">Book</button>                    
+                            </div>
+                            
+                          </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade border border-dark border-top-0 p-3"
+            id="nav-contact"
+            role="tabpanel"
+            aria-labelledby="nav-contact-tab"
+            tabindex="0"
+          >
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="card ">
+                        <div class="imgTour">
+                          <img class="card-img-top " src="images/vtau.jpg" alt="">
+                          <div class="time">
+                            <i class="fa fa-clock"></i>3 days/2 nights
+                          </div>
+                        </div>                                            
+                        <div class="card-body cardTourItem">                                       
+                          <a class="card-title nameHotTour" href="">Tp.Hcm- Vũng Tàu-Long Hải 2n1d</a>
+                          <p class="card-text mt-2">
+                            <i class="fas fa-walking"></i> Plane & car <br>
+                            <i class="fas fa-calendar-alt"></i> 2021 <br>
+                            <i class="fas fa-dollar-sign"></i> 3, 700, 000 đ
+                            <div class="footerCard d-flex justify-content-between">
+                              <button class="btn btn-outline-primary ml-1 float-right">Detail</button>
+                              <button class="btn btn-primary ml-1 float-right">Book</button>                    
+                            </div>
+                            
+                          </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade border border-dark border-top-0 p-3"
+            id="nav-disabled"
+            role="tabpanel"
+            aria-labelledby="nav-disabled-tab"
+            tabindex="0"
+          >
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="card ">
+                        <div class="imgTour">
+                          <img class="card-img-top " src="images/hcm1.jpg" alt="">
+                          <div class="time">
+                            <i class="fa fa-clock"></i>3 days/2 nights
+                          </div>
+                        </div>                                            
+                        <div class="card-body cardTourItem">                                       
+                          <a class="card-title nameHotTour" href="">Hà Nội - TP.HCM - Côn Đảo - Hà Nội</a>
+                          <p class="card-text mt-2">
+                            <i class="fas fa-walking"></i> Plane & car <br>
+                            <i class="fas fa-calendar-alt"></i> 2021 <br>
+                            <i class="fas fa-dollar-sign"></i> 3, 700, 000 đ
+                            <div class="footerCard d-flex justify-content-between">
+                              <button class="btn btn-outline-primary ml-1 float-right">Detail</button>
+                              <button class="btn btn-primary ml-1 float-right">Book</button>                    
+                            </div>
+                            
+                          </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card ">
+                        <div class="imgTour">
+                          <img class="card-img-top " src="images/hcm2.jpg" alt="">
+                          <div class="time">
+                            <i class="fa fa-clock"></i>3 days/2 nights
+                          </div>
+                        </div>                                            
+                        <div class="card-body cardTourItem">                                       
+                          <a class="card-title nameHotTour" href="">Hà Nội - Nha Trang - Phan Thiết - Sài Gòn</a>
+                          <p class="card-text mt-2">
+                            <i class="fas fa-walking"></i> Plane & car <br>
+                            <i class="fas fa-calendar-alt"></i> 2021 <br>
+                            <i class="fas fa-dollar-sign"></i> 3, 700, 000 đ
+                            <div class="footerCard d-flex justify-content-between">
+                              <button class="btn btn-outline-primary ml-1 float-right">Detail</button>
+                              <button class="btn btn-primary ml-1 float-right">Book</button>                    
+                            </div>
+                            
+                          </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ALBUM  -->
+    <section class="library">
+        <div class="container content">
+            <div id="carouselExampleIntervalLibrary" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="2000">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <img src="./images/anh1-thu-vien.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="col-lg-4">
+                            <img src="./images/anh2-thu-vien.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="col-lg-4">
+                            <img src="./images/anh3-thu-vien.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <img src="./images/anh4-thu-vien.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="col-lg-4">
+                            <img src="./images/anh5-thu-vien.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="col-lg-4">
+                            <img src="./images/anh6-thu-vien.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <img src="./images/anh7-thu-vien.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="col-lg-4">
+                            <img src="./images/anh8-thu-vien.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="col-lg-4">
+                            <img src="./images/anh1-thu-vien.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIntervalLibrary" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIntervalLibrary" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+              </div>
+        </div>
+    </section>
+
+
+     <!-- FOOTER  -->
+  <footer class="footer bg-dark py-5 text-white">
+    <div class="container content">
+      <div class="row">
+        <div class="col-lg-4">
+          <h1><a href="">Travel</a></h1>
+          <p>For us, travel is not just about discovering new places, but also about discovering yourself. We believe that every trip is an opportunity to create memorable memories, experience a unique culture and relax after stressful working days.</p>
+        </div>
+        <div class="col-lg-4">
+          <ul>
+            <li class="nav-item p-2">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item p-2">
+            <a class="nav-link" href="./vietnamtour.html">VietNam Tour</a>
+          </li>          
+          <li class="nav-item dropdown p-2">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Hotel
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider" /></li>
+              <li>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown p-2">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Promotion
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider" /></li>
+              <li>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </li>
+            </ul>
+          </li>
+          </ul>
+          
+        </div>
+        <div class="col-lg-4">
+          <div class="item mb-3">
+            <i class="fa fa-phone me-2 border border-white rounded-circle p-2"></i><a class="text-white" href="tel: 020908009008">020908009008</a>
+          </div>          
+          <div class="item">
+            <i class="fa fa-envelope me-2 border border-white rounded-circle p-2"></i><a class="text-white" href="mail: travel@vietnamtravel.com">travel@vietnamtravel.com</a>
+          </div>
+          
+          
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- MODAL SIGNIN  -->
+    <!-- Modal -->
+  <div class="modal fade" id="modalSignin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Signin</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <form action="">
+          <div class="modal-body">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Email address</label>
+              <input type="email" class="form-control" required placeholder="name@example.com">
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">Password</label>
+              <input type="password" class="form-control" required placeholder="password">
+            </div>
+          </div>
+          <div class="modal-footer">        
+            <button type="submit" class="btn btn-primary" id="liveToastBtn">Signin</button>
+          </div>
+        </form>
+        
+      </div>
+    </div>
+  </div>
+    <!-- Modal SIGNUP -->
+  <div class="modal fade" id="modalSignup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Signin</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <form action="">
+           <div class="modal-body">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Fullname</label>
+              <input type="text" class="form-control" required placeholder="Fullname">
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Phone</label>
+              <input type="number" class="form-control" required  placeholder="phone">
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Email address</label>
+              <input type="email" class="form-control" required  placeholder="name@example.com">
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">Password</label>
+              <input type="password" class="form-control" required  placeholder="password">
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">Confirm Password</label>
+              <input type="password" class="form-control" required  placeholder="confirm password">
+            </div>
+          </div>
+          <div class="modal-footer">        
+            <button type="submit" class="btn btn-primary">Signup</button>
+          </div>
+        </form>
+       
+      </div>
+    </div>
+  </div> 
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

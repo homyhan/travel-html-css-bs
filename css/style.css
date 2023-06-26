@@ -1,0 +1,257 @@
+/* GLOBAL  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* INTRO  */
+.intro {
+  background-color: rgb(133, 133, 255);
+  height: 92px;
+}
+.intro .content img {
+  width: 60px;
+}
+.intro .content a {
+  text-decoration: none;
+}
+
+/* HEADER  */
+.header {
+}
+.header .content {
+  width: 100%;
+  height: 600px;
+}
+.carousel.slide,
+.carousel-inner,
+.carousel-item {
+  height: 100%;
+}
+.header img {
+  height: 100%;
+  object-fit: cover;
+}
+.navbar{
+  transition: 0.4s;
+  
+}
+.navbar .content li {
+  transition: 0.4s;
+}
+.navbar .content li:hover {
+  background-color: brown;
+}
+.navbar .content li a {
+  transition: 0.4s;
+}
+.navbar .content li.nav-item:hover a {
+  color: white;
+}
+.navbar-nav .nav-item.active{
+  background-color: brown !important;
+  
+}
+.navbar-nav .nav-item.active a{
+  color: white;
+}
+
+/* REASON  */
+.reason {
+  padding: 80px 0px;
+}
+.reason .formRegister{
+    background-color: #61b4e0;
+    padding: 40px 20px;
+}
+.reason .formRegister h2{
+    font-size: 20px;
+}
+.reason .title{
+  background-color: #61b4e0;  
+  padding: 15px 0px;  
+}
+
+/* HOT TOUR  */
+.hottour .content h2, .highlights .content h2, .destination .content h2, .combo .content h2, .album .content h2{
+  position: relative;
+  color: #61b4e0;
+}
+.hottour .content h2::after, 
+.highlights .content h2::after,
+.destination .content h2::after,
+.combo .content h2::after,
+.album .content h2::after{
+  content: '';
+  width: 50px;
+  height: 3px;
+  background-color: black;
+  position: absolute;
+  top: 50%;
+  left: 0%;  
+  transform: translateX(-130%);
+}
+.hottour .content h2::before,
+.highlights .content h2::before,
+.destination .content h2::before,
+.combo .content h2::before,
+.album .content h2::before{
+  content: '';
+  width: 50px;
+  height: 3px;
+  background-color: black;
+  position: absolute;
+  top: 50%;
+  right: 0%;  
+  transform: translateX(130%);
+}
+
+.imgTour{
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.imgTour > img{
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 100%;
+  transition: 0.4s;
+  object-fit: cover;
+}
+.imgTour:hover img{
+  width: 110%;
+  height: 110%;
+  opacity: 0.8;
+  cursor: pointer;
+}
+.imgTour .time{
+  position: absolute;
+  top: 88%;
+  left: 0;
+  color: white;
+}
+
+a.nameHotTour{
+  font-weight: bold;
+  display: block;
+  margin-top: 10px;
+  padding: 0 5px;
+  line-height: 18px;  
+  text-decoration: none;
+  cursor: pointer;
+}
+a.nameHotTour:hover{
+  color: #0056b3;
+  cursor: pointer;
+}
+
+.hottour button{
+  cursor: pointer;
+}
+
+/* LIGHHIGHT */
+.highlights .content .row img{
+  height: 92px;
+  width: 100%;
+}
+
+/* TOUR DESTINATION  */
+.col-2dot4{
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 20%;
+  flex: 0 0 20%;
+  max-width: 20%;
+}
+
+/* COMBO  */
+img.anh-combo{
+  transition: 0.7s;
+}
+img.anh-combo:hover{
+  transform: rotate(5deg);
+  transition: 0.5s;
+}
+.card-combo{
+  margin: 0;
+  padding: 0;
+}
+
+/* FOOTER  */
+.footer ul{
+  list-style: none;
+}
+
+@media screen and (max-width: 990px){
+  .intro{
+    display: none;
+  }
+  .imgTour{
+    height: 250px;
+  }
+  .hottour .content .item{
+    margin-bottom: 15px;
+  }
+  
+  /* HIGHLIGHT  */
+  .highlights .content .row{
+    text-align: center;
+  }
+  .highlights .content .row img{
+    width: 516px;
+    height: 352px;
+  }
+  /* COMBO  */
+  .combo .row .col-lg-4{
+    margin-bottom: 15px;
+  }
+}
+
+
+.changeBg{
+  background-color: #61b4e0;
+  position: fixed;
+  top:0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+.changeBg a{
+  color: white;
+}
+
+
+/* VIETNAM TOUR  */
+.tabs{
+  margin: 80px 0px;
+}
+
+/* LIBRARY  */
+.library{
+  margin-bottom: 80px;
+}
+
+
+.iconIntro {
+  animation: zoom 1s linear infinite;
+}
+@keyframes zoom {
+  0%{
+      transform: scale(1)
+  }
+  50%{
+      transform: scale(1.1);      
+  }
+  100%{
+    transform: scale(1);
+  }
+}
